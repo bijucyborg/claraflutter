@@ -1,0 +1,40 @@
+{
+  "@@locale": "en",
+  "app_title": "Alles Klara",
+  "@app_title": {
+    "description": "The title of the application"
+  },
+  "welcome_message": "The app that makes caregiving easier",
+  "@welcome_message": {
+    "description": "Welcome slogan"
+  },
+  "onboarding_prompt": "Enter your access code to get started",
+  "@onboarding_prompt": {
+    "description": "Message during onboarding"
+  },
+  "navigation_consultation": "Consultation",
+  "navigation_care_topics": "Care topics",
+  "navigation_profile": "Profile",
+  "navigation_settings": "Settings",
+  "status_active": "Active",
+  "status_closed": "Closed",
+  "consultation_request_sent": "New consultation requested",
+  "consultation_room_join": "Join consultation room",
+  "error_network": "Network connection failed",
+  "chat_placeholder": "Your message...",
+  "logout_button": "Log out",
+  "legal_disclaimer": "Confidential and secure. Free consultation via chat, phone, and video.",
+  "back_button": "Back",
+  "next_button": "Next",
+  "consultation_contract": "Consultation agreement",
+  "privacy_info": "Privacy information",
+  "alles_klara": "Alles Klara",
+  "beratung": "Consultation",
+  "pflegethemen": "Caregiving topics",
+  "profil": "Profile",
+  "einstellungen": "Settings",
+  "die_app_die_pflegen_leichter_macht": "The app that makes caregiving easier",
+  "beratungsraum_beitreten": "Join consultation room",
+  "testautomatisierung_ist_super": "Test automation is great",
+  "unsere_experten_sind_jetzt_f_r_sie_da": "Our experts are here for you now"
+}

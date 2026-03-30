@@ -1,0 +1,40 @@
+{
+  "@@locale": "de",
+  "app_title": "Alles Klara",
+  "@app_title": {
+    "description": "The title of the application"
+  },
+  "welcome_message": "Die App, die Pflegen leichter macht",
+  "@welcome_message": {
+    "description": "Welcome slogan"
+  },
+  "onboarding_prompt": "Geben Sie Ihren Zugangscode ein, um zu beginnen",
+  "@onboarding_prompt": {
+    "description": "Message during onboarding"
+  },
+  "navigation_consultation": "Beratung",
+  "navigation_care_topics": "Pflegethemen",
+  "navigation_profile": "Profil",
+  "navigation_settings": "Einstellungen",
+  "status_active": "Aktiv",
+  "status_closed": "Geschlossen",
+  "consultation_request_sent": "Neue Beratung angefragt",
+  "consultation_room_join": "Beratungsraum beitreten",
+  "error_network": "Netzwerkverbindung fehlgeschlagen",
+  "chat_placeholder": "Deine Nachricht...",
+  "logout_button": "Abmelden",
+  "legal_disclaimer": "Vertraulich und datensicher. Kostenlose Beratung via Chat, Telefon und Video.",
+  "back_button": "Zurück",
+  "next_button": "Weiter",
+  "consultation_contract": "Beratungsvertrag",
+  "privacy_info": "Datenschutzinfo",
+  "alles_klara": "Alles Klara",
+  "beratung": "Beratung",
+  "pflegethemen": "Pflegethemen",
+  "profil": "Profil",
+  "einstellungen": "Einstellungen",
+  "die_app_die_pflegen_leichter_macht": "Die App, die Pflegen leichter macht",
+  "beratungsraum_beitreten": "Beratungsraum beitreten",
+  "testautomatisierung_ist_super": "Testautomatisierung ist super",
+  "unsere_experten_sind_jetzt_f_r_sie_da": "Unsere Experten sind jetzt für Sie da"
+}
