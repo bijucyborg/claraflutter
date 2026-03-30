@@ -46,6 +46,7 @@ function extractStrings() {
     while ((match = REGEX_L10N.exec(content)) !== null) {
       const text = match[1];
       const key = toKey(text);
+      if (!key) continue; // Skip empty text
       strings.set(key, text);
     }
   });
