@@ -103,4 +103,40 @@ To show the transformation to the client:
 
 ---
 
+## 8. Live Demo: The "Wow" Moments
+
+### Scenario 1: Adding a Feature (Zero-Ceremony)
+**Goal:** Show that you can write German code and ignore everything else.
+
+1.  **Open `lib/main.dart`** (around line 133). 
+2.  **Paste this snippet**:
+    ```dart
+    const SizedBox(height: 10),
+    Text(widget.translate(l10n('Unsere Experten sind jetzt für Sie da'))),
+    ```
+3.  **Run the Sync**:
+    ```bash
+    GOOGLE_API_KEY=xxx node scripts/lingo-flutter.js
+    ```
+4.  **Show the Result**: Toggle to **Slovenský**. The new text is now live!
+
+---
+
+### Scenario 2: Scaling to a New Market (French/Spanish)
+**Goal:** Show that adding 10 languages is as easy as adding 1.
+
+1.  **Update `i18n.json`**:
+    Add `"fr"` to the `targets` list:
+    `"targets": ["en", "sk", "fr"]`
+2.  **Update `lib/main.dart`**:
+    Add the option to the Menu (around line 104):
+    `const PopupMenuItem(value: 'fr', child: Text('Français')),`
+3.  **Run the Sync**:
+    ```bash
+    GOOGLE_API_KEY=xxx node scripts/lingo-flutter.js
+    ```
+4.  **Show the Result**: A new `app_fr.arb` just appeared, fully translated. **Total effort: 2 minutes.**
+
+---
+
 **Happy Demoing!** 🚀

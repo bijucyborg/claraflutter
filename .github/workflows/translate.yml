@@ -1,13 +1,13 @@
 name: "Lingo.dev Translation Automation"
 on:
   push:
-    branches: [main]
+    branches: ["**"] # Trigger on any branch for the PR demo
     paths:
-      - 'lib/l10n/app_de.arb' # Re-translate when source ARB changes
+      - 'lib/l10n/app_de.arb'
+      - 'lib/**/*.dart' # Extractor: re-run if code changes!
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   translate:
@@ -25,17 +25,9 @@ jobs:
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
-      # (Optional) The bridge script actually runs 'npx lingo.dev run' internally,
-      # but we can keep it here for clarity or as a separate step.
-      # - name: Run Lingo.dev
-      #   run: npx lingo.dev@latest run
-      #   env:
-      #     GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-
       - name: Commit translated files
         run: |
           git config --global user.name "Lingo.dev Bot"
           git config --global user.email "bot@lingo.dev"
-          git add lib/l10n/ app_en.arb app_sk.arb i18n.lock
-          git diff --cached --quiet || git commit -m "feat: auto-update translations (EN, SK)"
-          git push
+          git add lib/l10n/*.arb i18n.lock
+          git diff --cached --quiet || (git commit -m "feat: auto-translate new strings (Lingo.dev)" && git push)
