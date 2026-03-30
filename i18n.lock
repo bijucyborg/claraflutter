@@ -1,0 +1,22 @@
+version: 1
+checksums:
+  024ad29e8b3ca5ac649493075a6e0562:
+    app_title: 7cbd60ee926b2a3e9c644462bd26103a
+    welcome_message: ca757b1d4a65ee4dc9a089ebbc20b30a
+    onboarding_prompt: 10d594c7fbb1083e8652142f4eefec5f
+    navigation_consultation: 12cbabdf63c115c53895dc30164cea36
+    navigation_care_topics: c039edcc27d093ead137bcbd30b230f9
+    navigation_profile: 2cbe0ed36d5cd7aec912b9615b08d22d
+    navigation_settings: 7c504a4d570315f1562de19ea21821e0
+    status_active: ca1f41cbba2bf46ad0f16e334a30920e
+    status_closed: a64085988714c3e5ca4a1400c3bf21c2
+    consultation_request_sent: cbbbe0090133e680cad64f589a420cea
+    consultation_room_join: 51753599c18e4b3cab54dfb378052ab6
+    error_network: 0e56c92627f86c4f92017f5d13dfff3b
+    chat_placeholder: b25a788195c96e1b06ac5160eeb4ddbe
+    logout_button: 3dea62e02b01f7b7b7711d0adba219d6
+    legal_disclaimer: 5eb6d3716a9bfb1170e5499608937683
+    back_button: b533f305c9d5248cd8cc438779de1427
+    next_button: 5e42d858c4f706e2dda6fe91c95c97ee
+    consultation_contract: d04c05c231976e4534227614c8c7d0db
+    privacy_info: d88cc21c6658239796463551f93f8a90

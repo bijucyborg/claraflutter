@@ -1,0 +1,23 @@
+{
+  "$schema": "https://lingo.dev/schema/i18n.json",
+  "version": "1.10",
+  "locale": {
+    "source": "de",
+    "targets": [
+      "en",
+      "sk"
+    ]
+  },
+  "provider": {
+    "id": "google",
+    "model": "gemini-3-flash-preview",
+    "prompt": "You are a professional translator for a healthcare and caregiving consultation app specifically for the Austrian market. Translate from {source} to {target}. Keep the tone respectful and supportive. Preserve all placeholders like {name} and maintain the original meaning."
+  },
+  "buckets": {
+    "flutter": {
+      "include": [
+        "lib/l10n/app_[locale].arb"
+      ]
+    }
+  }
+}

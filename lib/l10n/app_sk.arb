@@ -1,0 +1,31 @@
+{
+  "@@locale": "sk",
+  "app_title": "Alles Klara",
+  "@app_title": {
+    "description": "The title of the application"
+  },
+  "welcome_message": "Aplikácia, ktorá uľahčuje opatrovanie",
+  "@welcome_message": {
+    "description": "Welcome slogan"
+  },
+  "onboarding_prompt": "Zadajte svoj prístupový kód a začnite",
+  "@onboarding_prompt": {
+    "description": "Message during onboarding"
+  },
+  "navigation_consultation": "Poradenstvo",
+  "navigation_care_topics": "Témy o opatrovaní",
+  "navigation_profile": "Profil",
+  "navigation_settings": "Nastavenia",
+  "status_active": "Aktívne",
+  "status_closed": "Uzatvorené",
+  "consultation_request_sent": "Žiadosť o nové poradenstvo bola odoslaná",
+  "consultation_room_join": "Vstúpiť do konzultačnej miestnosti",
+  "error_network": "Pripojenie k sieti zlyhalo",
+  "chat_placeholder": "Vaša správa...",
+  "logout_button": "Odhlásiť sa",
+  "legal_disclaimer": "Dôverné a s ochranou údajov. Bezplatné poradenstvo cez čet, telefón a video.",
+  "back_button": "Späť",
+  "next_button": "Ďalej",
+  "consultation_contract": "Zmluva o poradenstve",
+  "privacy_info": "Informácie o ochrane údajov"
+}

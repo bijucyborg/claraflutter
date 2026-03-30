@@ -1,0 +1,41 @@
+name: "Lingo.dev Translation Automation"
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/l10n/app_de.arb' # Re-translate when source ARB changes
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Flutter Bridge (Extract & Sync)
+        run: node scripts/lingo-flutter.js
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      # (Optional) The bridge script actually runs 'npx lingo.dev run' internally,
+      # but we can keep it here for clarity or as a separate step.
+      # - name: Run Lingo.dev
+      #   run: npx lingo.dev@latest run
+      #   env:
+      #     GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Commit translated files
+        run: |
+          git config --global user.name "Lingo.dev Bot"
+          git config --global user.email "bot@lingo.dev"
+          git add lib/l10n/ app_en.arb app_sk.arb i18n.lock
+          git diff --cached --quiet || git commit -m "feat: auto-update translations (EN, SK)"
+          git push
