@@ -133,6 +133,8 @@ class _MainTabScreenState extends State<MainTabScreen> {
             Text(widget.translate(l10n('Testautomatisierung ist super'))),
             const SizedBox(height: 10),
             Text(widget.translate(l10n('Unsere Experten sind jetzt für Sie da'))),
+            const SizedBox(height: 10),
+            Text(widget.translate(l10n('Wir sind Alles Clara'))),
             const SizedBox(height: 20),
             Text('Demo Active Locale: ${widget.locale.languageCode}', style: const TextStyle(color: Colors.grey)),
           ],
