@@ -99,4 +99,8 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get wir_sind_alles_clara => 'Sme Alles Clara';
+
+  @override
+  String get wir_stehen_f_r_empathie_professionalit_t_und_vertrauen =>
+      'Stojíme za empatiou, profesionalitou a dôverou';
 }

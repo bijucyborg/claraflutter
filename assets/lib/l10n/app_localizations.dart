@@ -273,6 +273,12 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Wir sind Alles Clara'**
   String get wir_sind_alles_clara;
+
+  /// No description provided for @wir_stehen_f_r_empathie_professionalit_t_und_vertrauen.
+  ///
+  /// In de, this message translates to:
+  /// **'Wir stehen für Empathie, Professionalität und Vertrauen'**
+  String get wir_stehen_f_r_empathie_professionalit_t_und_vertrauen;
 }
 
 class _AppLocalizationsDelegate

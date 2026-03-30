@@ -97,4 +97,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get wir_sind_alles_clara => 'We are Alles Clara';
+
+  @override
+  String get wir_stehen_f_r_empathie_professionalit_t_und_vertrauen =>
+      'We stand for empathy, professionalism, and trust';
 }

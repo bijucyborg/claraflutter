@@ -98,4 +98,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get wir_sind_alles_clara => 'Wir sind Alles Clara';
+
+  @override
+  String get wir_stehen_f_r_empathie_professionalit_t_und_vertrauen =>
+      'Wir stehen für Empathie, Professionalität und Vertrauen';
 }
