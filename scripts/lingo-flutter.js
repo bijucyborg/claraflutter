@@ -90,7 +90,8 @@ async function sync() {
 
   // 4. (Optional) Auto-trigger Lingo.dev translation
   try {
-    console.log('\n🌍 Triggering Lingo.dev Translation Pipeline...');
+    console.log('--- Alles Klara - AI Localization Bridge ---');
+    console.log('Scanning lib/**/*.dart for l10n("...") strings...');
     execSync('npx lingo.dev@latest run', { stdio: 'inherit', cwd: path.join(__dirname, '..') });
     console.log('🎉 Translation Complete!');
   } catch (error) {

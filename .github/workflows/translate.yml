@@ -1,4 +1,4 @@
-name: "Lingo.dev Translation Automation"
+name: "Alles Klara - AI Localization Pipeline"
 on:
   push:
     branches: ["**"] # Trigger on any branch for the PR demo
@@ -22,7 +22,7 @@ jobs:
         with:
           channel: 'stable'
 
-      - name: Run Flutter Bridge (Extract & Sync)
+      - name: AI Localization Extraction
         run: node scripts/lingo-flutter.js
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -30,14 +30,14 @@ jobs:
       - name: Build Flutter Web
         run: flutter build web --base-href "/${{ github.event.repository.name }}/"
 
-      - name: Commit translated files
+      - name: Commit AI translations
         run: |
-          git config --global user.name "Lingo.dev Bot"
-          git config --global user.email "bot@lingo.dev"
+          git config --global user.name "Alles Klara AI Bot"
+          git config --global user.email "ai-localization@clara-app.com"
           git add lib/l10n/*.arb i18n.lock
-          git diff --cached --quiet || (git commit -m "feat: auto-translate new strings (Lingo.dev)" && git push)
+          git diff --cached --quiet || (git commit -m "perf: automated AI localization update" && git push)
 
-      - name: Deploy to GitHub Pages
+      - name: Update Live Demo
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
