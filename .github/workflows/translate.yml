@@ -20,10 +20,18 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
       - name: Run Flutter Bridge (Extract & Sync)
         run: node scripts/lingo-flutter.js
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Build Flutter Web
+        run: flutter build web --base-href "/${{ github.event.repository.name }}/"
 
       - name: Commit translated files
         run: |
@@ -31,3 +39,9 @@ jobs:
           git config --global user.email "bot@lingo.dev"
           git add lib/l10n/*.arb i18n.lock
           git diff --cached --quiet || (git commit -m "feat: auto-translate new strings (Lingo.dev)" && git push)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
