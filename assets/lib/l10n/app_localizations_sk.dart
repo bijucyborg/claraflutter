@@ -96,4 +96,7 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get unsere_experten_sind_jetzt_f_r_sie_da =>
       'Naši odborníci sú tu teraz pre vás';
+
+  @override
+  String get wir_sind_alles_clara => 'Sme Alles Clara';
 }

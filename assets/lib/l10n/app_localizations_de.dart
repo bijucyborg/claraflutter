@@ -95,4 +95,7 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get unsere_experten_sind_jetzt_f_r_sie_da =>
       'Unsere Experten sind jetzt für Sie da';
+
+  @override
+  String get wir_sind_alles_clara => 'Wir sind Alles Clara';
 }

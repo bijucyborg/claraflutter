@@ -267,6 +267,12 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Unsere Experten sind jetzt für Sie da'**
   String get unsere_experten_sind_jetzt_f_r_sie_da;
+
+  /// No description provided for @wir_sind_alles_clara.
+  ///
+  /// In de, this message translates to:
+  /// **'Wir sind Alles Clara'**
+  String get wir_sind_alles_clara;
 }
 
 class _AppLocalizationsDelegate
