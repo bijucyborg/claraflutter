@@ -27,5 +27,14 @@
   "back_button": "Späť",
   "next_button": "Ďalej",
   "consultation_contract": "Zmluva o poradenstve",
-  "privacy_info": "Informácie o ochrane údajov"
+  "privacy_info": "Informácie o ochrane údajov",
+  "": "...",
+  "alles_klara": "Alles Klara",
+  "beratung": "Poradenstvo",
+  "pflegethemen": "Témy opatrovania",
+  "profil": "Profil",
+  "einstellungen": "Nastavenia",
+  "die_app_die_pflegen_leichter_macht": "Aplikácia, ktorá uľahčuje opatrovanie",
+  "beratungsraum_beitreten": "Vstúpiť do konzultačnej miestnosti",
+  "testautomatisierung_ist_super": "Testovacia automatizácia je super"
 }

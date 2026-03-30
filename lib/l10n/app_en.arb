@@ -27,5 +27,14 @@
   "back_button": "Back",
   "next_button": "Next",
   "consultation_contract": "Consultation agreement",
-  "privacy_info": "Privacy information"
+  "privacy_info": "Privacy information",
+  "": "...",
+  "alles_klara": "Alles Klara",
+  "beratung": "Consultation",
+  "pflegethemen": "Caregiving topics",
+  "profil": "Profile",
+  "einstellungen": "Settings",
+  "die_app_die_pflegen_leichter_macht": "The app that makes caregiving easier",
+  "beratungsraum_beitreten": "Join consultation room",
+  "testautomatisierung_ist_super": "Test automation is great"
 }

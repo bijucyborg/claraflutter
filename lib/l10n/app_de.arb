@@ -27,5 +27,14 @@
   "back_button": "Zurück",
   "next_button": "Weiter",
   "consultation_contract": "Beratungsvertrag",
-  "privacy_info": "Datenschutzinfo"
+  "privacy_info": "Datenschutzinfo",
+  "": "...",
+  "alles_klara": "Alles Klara",
+  "beratung": "Beratung",
+  "pflegethemen": "Pflegethemen",
+  "profil": "Profil",
+  "einstellungen": "Einstellungen",
+  "die_app_die_pflegen_leichter_macht": "Die App, die Pflegen leichter macht",
+  "beratungsraum_beitreten": "Beratungsraum beitreten",
+  "testautomatisierung_ist_super": "Testautomatisierung ist super"
 }
